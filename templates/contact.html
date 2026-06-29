@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Contact | Notes Management System{% endblock %}
+{% block content %}
+<section class="container py-5">
+  <div class="row g-4 align-items-stretch">
+    <div class="col-lg-5">
+      <div class="custom-card p-4 h-100">
+        <h1 class="section-title mb-3">Contact page</h1>
+        <p class="muted-text">Use this page to show a professional contact form in your project demonstration.</p>
+        <p><strong>Email:</strong> chinniyugandhar996@gmail.com</p>
+        <p><strong>Phone:</strong> +91 7993275944</p>
+        <p><strong>Location:</strong> Hyderabad, Telangana</p>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <div class="custom-card p-4">
+        <h2 class="section-title mb-3">Send a message</h2>
+        <form method="post">
+          <div class="row g-3">
+            <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Your name" required></div>
+            <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Your email" required></div>
+            <div class="col-12"><input type="text" name="subject" class="form-control" placeholder="Subject" required></div>
+            <div class="col-12"><textarea name="message" rows="6" class="form-control" placeholder="Write your message" required></textarea></div>
+            <div class="col-12"><button class="btn btn-main">Submit Message</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

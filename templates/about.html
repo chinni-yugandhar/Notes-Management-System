@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}About | Notes Management System{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <div class="hero-card p-4 p-lg-5">
+      <span class="info-badge mb-3">Flask + MySQL Project</span>
+      <div class="row align-items-center g-4 mt-1">
+        <div class="col-lg-7">
+          <h3 class="hero-title">Securely manage your personal notes in one responsive web application.</h3>
+          <p class="lead muted-text mt-3">This Notes Management System is designed to support registration, login, forgot password, logout, and full CRUD note operations for each logged-in user with private access control.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="{{ url_for('register') }}" class="btn btn-main">Create Account</a>
+            <a href="{{ url_for('login') }}" class="btn btn-soft">Login Now</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="custom-card p-4 h-100">
+            <h3 class="section-title mb-3">Project Highlights</h3>
+            <ul class="list-clean muted-text">
+              <li>User registration, login and session management.</li>
+              <li>Private notes linked by user_id.</li>
+              <li>Create, read, update and delete notes.</li>
+              <li>Password hashing with Werkzeug.</li>
+              <li>Responsive Bootstrap-based interface.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
